@@ -8,6 +8,7 @@ import PayButton from '../components/PayButton';
 import Home from '../pages/Home';
 import Wallet from '../pages/Wallet';
 import Pay from '../pages/Pay';
+import Notification from '../pages/Notification';
 
 const Tab = createBottomTabNavigator();
 
@@ -55,7 +56,6 @@ function AppRoutes() {
         activeTintColor: '#fff',
         inactiveTintColor: '#92929c',
       }}
-      initialRouteName="Wallet"
     >
       <Tab.Screen options={{ title: 'Inicio' }} name="Home" component={Home} />
       <Tab.Screen
@@ -68,7 +68,7 @@ function AppRoutes() {
       <Tab.Screen
         options={{ title: 'Notificações' }}
         name="Notifications"
-        component={Pay}
+        component={Notification}
       />
 
       <Tab.Screen
