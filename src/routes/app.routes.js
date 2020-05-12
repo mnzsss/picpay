@@ -55,6 +55,7 @@ function AppRoutes() {
         activeTintColor: '#fff',
         inactiveTintColor: '#92929c',
       }}
+      initialRouteName="Wallet"
     >
       <Tab.Screen options={{ title: 'Inicio' }} name="Home" component={Home} />
       <Tab.Screen
