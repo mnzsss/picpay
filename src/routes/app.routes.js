@@ -9,6 +9,7 @@ import Home from '../pages/Home';
 import Wallet from '../pages/Wallet';
 import Pay from '../pages/Pay';
 import Notification from '../pages/Notification';
+import Settings from '../pages/Settings';
 
 const Tab = createBottomTabNavigator();
 
@@ -74,7 +75,7 @@ function AppRoutes() {
       <Tab.Screen
         options={{ title: 'Ajustes' }}
         name="Settings"
-        component={Pay}
+        component={Settings}
       />
     </Tab.Navigator>
   );

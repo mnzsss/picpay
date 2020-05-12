@@ -8,6 +8,7 @@ export const Container = styled.ScrollView.attrs(() => ({
     paddingLeft: 16,
   },
 }))`
+  margin-top: 10px;
   background: #1e222b;
   height: 130px;
 `;
