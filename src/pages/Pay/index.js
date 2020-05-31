@@ -1,10 +1,41 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { MaterialCommunityIcons, AntDesign } from '@expo/vector-icons';
 
-// import { Container } from './styles';
+import Suggestions from '../../components/Suggestions';
+import Activities from '../../components/Activities';
+import Tips from '../../components/Tips';
+import Banner from '../../components/Banner';
 
-const Pay = () => {
-  return <Text>Pay</Text>;
+import { Wrapper, Header, Container, Input, TextInput, Text } from './styles';
+import Services from '../../components/Services';
+
+const Home = () => {
+  return (
+    <Wrapper>
+      <Container>
+        <Header>
+          <MaterialCommunityIcons
+            name="qrcode-scan"
+            size={30}
+            color="#00fc6c"
+          />
+
+          <Input>
+            <AntDesign name="search1" size={20} color="#fff" />
+            <TextInput
+              placeholder="Quem você quer pagar ?"
+              keyboardAppearance="dark"
+            />
+          </Input>
+        </Header>
+
+        <Text>Sugestões para Você</Text>
+        <Suggestions />
+
+        <Services />
+      </Container>
+    </Wrapper>
+  );
 };
 
-export default Pay;
+export default Home;

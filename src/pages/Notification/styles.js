@@ -15,7 +15,6 @@ export const Title = styled.Text`
 
 export const Notifications = styled.ScrollView`
   background: #3d4451;
-
   margin-top: 20px;
 `;
 
