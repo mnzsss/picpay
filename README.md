@@ -1,3 +1,9 @@
+<p align="center">
+  <img alt="Picpay" width="200" src="./github/picpay.png" />
+</p>
+
+<br>
+
 <h1 align="center">Welcome to PicPay Clone 👋</h1>
 
 <p align="center">PicPay clone for study React Native</p>
